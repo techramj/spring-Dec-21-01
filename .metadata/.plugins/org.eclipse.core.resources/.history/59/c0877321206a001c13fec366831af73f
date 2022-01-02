@@ -1,0 +1,33 @@
+package com.easylearning.main;
+
+
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+import com.easylearning.Employee;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		//1.BeanFactory
+		 ClassPathResource classPathResource = new ClassPathResource("spring.xml");
+		 BeanFactory factory = new XmlBeanFactory(classPathResource);
+		 System.out.println(factory);
+		 
+		
+		
+		
+		
+		//2.ApplicationContext
+		 ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		 System.out.println(context);
+		 
+			
+		
+	}
+
+}

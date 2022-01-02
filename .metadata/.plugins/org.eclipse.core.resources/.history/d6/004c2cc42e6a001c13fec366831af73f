@@ -1,0 +1,17 @@
+create a bean
+
+1. BeanFactory
+2. ApplicationContext
+
+
+int a=10;
+int b=10;
+
+a==b
+
+scope of bean.
+1. singleton (default)
+
+
+
+

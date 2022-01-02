@@ -1,0 +1,9 @@
+package com.easylearning;
+
+public class Drawing {
+	
+	private Circle circle;
+	private Triangle triangle;
+	
+
+}

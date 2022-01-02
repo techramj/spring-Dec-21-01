@@ -1,0 +1,11 @@
+M : Minimum memory
+M : Minimum time
+M : minimum changes
+
+
+--jdk 8
+--Maven
+--spring jar 4/5 - 5
+
+Google
+Download maven. https://maven.apache.org/download.cgi

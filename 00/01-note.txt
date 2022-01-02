@@ -1,0 +1,23 @@
+M : Minimum memory
+M : Minimum time
+M : minimum changes
+
+S/W required
+1. JDK 8+
+2. Maven   https://maven.apache.org/download.cgi
+3. Eclipse
+4. Spring Jar  https://repo.spring.io/ui/native/release/org/springframework/spring/5.0.0.RELEASE/
+
+Set up:
+
+JAVA_HOME => path of jdk. Parent of bin folder
+M2_HOME  => path of Maven project
+
+add above in system variable.
+
+update the path with
+%M2_HOME%\bin
+%JAVA_HOME%\bin
+
+
+
