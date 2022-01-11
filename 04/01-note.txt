@@ -1,0 +1,15 @@
+Lifecycle of bean:1
+1  instantiation
+2. populates the properties
+3. BeanNameAware - setBeanName()
+4. BeanFactoryAware. setBeanFactory
+5. BeanPostProcessor.postProcessBeforeInitialization method called
+6 . InitializingBean.afterPropertiesSet called
+7. custom init method
+8. BeanPostProcessor.postProcessAfterInitialization method called
+
+bean is ready to be used.
+
+container will be shutdown.
+9. DisposableBean.destroy()
+10. custom destroy

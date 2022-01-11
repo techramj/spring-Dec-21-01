@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+    <bean id="vehicle1" class="com.easylearning.Car" autowire-candidate="false">
+    	<constructor-arg value="BMW"></constructor-arg>
+    </bean>
+    
+    
+    <bean id="vehicle2" class="com.easylearning.Bike">
+    	<constructor-arg value="Bullet" />
+    </bean>
+    
+    <bean id="vehicle" class="com.easylearning.Test">
+    </bean>
+    
+    <bean id="emp" class="com.easylearning.Employee" autowire="byType">
+    	<constructor-arg name="id" value="1"/>
+    	<constructor-arg name="name" value="Jack"/>
+    	<constructor-arg name="salary" value="1000"/>
+    </bean>
+    
+    <bean id="emp1" class="com.easylearning.Employee" autowire="constructor">
+    	<property name="id" value="2"/>
+    	<property name="name" value="John"/>
+    	<property name="salary" value="2000"/>
+    </bean>
+  
+</beans>

@@ -58,5 +58,12 @@ public class Employee {
 	public void setVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", vehicle=" + vehicle + "]";
+	}
+	
+	
 	
 }
