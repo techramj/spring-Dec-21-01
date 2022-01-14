@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"> 
+   
+     <import resource="spring1.xml"/>
+     
+      <bean id="address" class="com.easylearning.model.Address"> 
+      	<property name="pincode" value="123455"></property>
+      	<property name="city" value="pune"></property>
+      </bean>
+      
+      <bean id="myBean" class="com.easylearning.model.MyBean"> 
+      	<property name="a" value="123455"></property>
+      	<property name="b" value="100.45"></property>
+      	<property name="curr"  value="USD"></property>
+      	<property name="password"  value="111-@#-889988"></property>
+      </bean>
+      
+      <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+      	 <property name="customEditors">
+      	 	<map>
+      	 		<entry key="com.easylearning.model.Password" value="com.easylearning.editor.PasswordEditor"></entry>
+      	 	</map>
+      	 </property>
+      </bean>
+        
+  </beans>
+        
