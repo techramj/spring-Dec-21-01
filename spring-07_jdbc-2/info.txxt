@@ -1,0 +1,14 @@
+--spring jdbc
+1. Datasource
+2. JdbcTemplate
+3. JdbcSupport
+
+hibernate : orm
+
+
+spring boot
+JPA
+
+				@Component
+	@Controller     @Service         @Repository
+
